@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.container{
+    display: grid;
+    grid-template-rows: 5vh 90vh 5vh;
+    background: rgb(39, 29, 29);
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-areas: " . . ."
+                        ". main ."
+                        "  . . .";
+    
+                    }
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main{
+    grid-area: main;
+    background: lightgrey;
+  
+    display: grid;
+    grid-template-rows: 20vh 70vh;
+    color: rgb(0, 0, 0);
+}
+.Row1{
+    background: lightseagreen;
+    display: grid;
+    grid-template-rows: 10vh 10vh;
+}
+.AppName{
+    /* background: red;
+  */
+    font-size: 3rem;
+}
+.Notification{
+    font-size: 2rem; 
+    /* background: yellow; */
+
+}
+.row2{
+
+    /* background: limegreen; */
+
+    display: grid;
+    grid-template-rows: 5vh 60vh 5vh;
+    grid-template-columns: 5VW 70VW 5VW;
+    grid-template-areas:" . . ."
+         " . WeatherContainer ."
+            " . . .";
+        }
+.WeatherContainer{
+    grid-area: WeatherContainer;
+    /* background: lightgray; */
+
+    display: grid;
+    grid-template-rows: 20vh 20vh 10vh 10vh; 
+}
+.WeatherIcon{
+    /* background: lightcoral; */
+
+}
+.imageDiv{
+    height:100%;
+    /* background: white;
+   */
+    width: 40%;
+    color: white;
+    background-size:cover; 
+    background-position-x:center; 
+    background-position-y: center; 
+
+}
+.temperatureValue{
+    /* background: rgb(50, 169, 205); */
+
+    font-size: 5rem;
+}
+.temperatureDescription{
+    /* background: yellowgreen; */
+
+    font-size: 3rem;
+}
+.location {
+    /* background: yellow; */
+
+    font-size: 3rem; 
+}
+
